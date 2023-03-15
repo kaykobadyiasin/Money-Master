@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master </title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <section>
+        <div class="container">
+            <main>
+                <div>
+                    <h1>Money Master $</h1>
+                </div>
+                <div class="main_content">
+                    <div class="left_img">
+                        <img src="images/money.png" alt="">
+                    </div>
+                    <div class="right_content">
+                        <h3>Income</h3>
+                        <form>
+                            <label>Income:</label>
+                            <input id="incomeField" class="com_input" type="text"><br>
+                            <h3>Expenses</h3>
+                            <label>Food:</label>
+                            <input id="foodField" class="com_input" type="text"><br>
+                            <label>Rent:</label>
+                            <input id="rentField" class="com_input" type="text"><br>
+                            <label>Clothes:</label>
+                            <input id="clothField" class="com_input" type="text">
+                        </form>
+                        <button onclick="calculateTotal()" class="calculate_btn">Calculate</button>
+                        <h3>Total Expenses: <span id="totalExpenses">00</span></h3>
+                        <h3>Balance: <span id="totalEqualBalance">00</span></h3>
+                        <form>
+                            <label>Save:</label>
+                            <input id="saveIncome" class="com_input" type="text"><span class="parsent">%</span>
+                        </form>
+                        <button onclick="saving()" class="save_btn">Save</button>
+                        <h3>Saving Amount: <span id="savingAmount">00</span></h3>
+                        <h3>Remaining Balance: <span id="TotalRemaining">00</span></h3>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
